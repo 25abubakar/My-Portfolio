@@ -1,2 +1,0 @@
-root: C:\Users\abubakar_291\Desktop\my-portfolio\nvm
-path: C:\Program Files\nodejs
