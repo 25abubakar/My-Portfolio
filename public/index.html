@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#080814" />
+    <meta name="description" content="Muhammad Abubakar — .NET Full Stack Developer. Portfolio showcasing projects in C#, ASP.NET Core, Web API, SQL Server, and more." />
+    <meta name="author" content="Muhammad Abubakar" />
+    <meta property="og:title" content="Muhammad Abubakar | .NET Full Stack Developer" />
+    <meta property="og:description" content="Portfolio of Muhammad Abubakar — .NET Full Stack Developer based in Islamabad, Pakistan." />
+    <meta property="og:type" content="website" />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <title>Muhammad Abubakar | .NET Full Stack Developer</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.358.0.min.js"></script>
+
+    <script>
+      AWS.config.region = 'us-east-1';
+      AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+        IdentityPoolId: 'us-east-1:cefcbeb5-2542-4839-9f15-41524a0e5254',
+      });
+
+      $(document).on('submit', 'form#contact-form', function(e) {
+        e.preventDefault();
+        var params = {
+          Destination: { ToAddresses: ['muhammadabubakarkhan1234@gmail.com'] },
+          Message: {
+            Body: {
+              Html: {
+                Charset: "UTF-8",
+                Data: $('#messagetext').val()
+              }
+            },
+            Subject: {
+              Charset: 'UTF-8',
+              Data: 'Portfolio Contact from ' + $('#name').val() + ' | ' + $('#emailid').val()
+            }
+          },
+          Source: 'muhammadabubakarkhan1234@gmail.com',
+        };
+        new AWS.SES({apiVersion: '2010-12-01'}).sendEmail(params).promise()
+          .then(function() { alert("Message sent! I'll get back to you soon."); })
+          .catch(function() { alert("Something went wrong. Please email me directly."); });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "name": "muhammad-abubakar-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio of Muhammad Abubakar — .NET Full Stack Developer",
+  "author": "Muhammad Abubakar <muhammadabubakarkhan1234@gmail.com>",
+  "homepage": "https://25abubakar.github.io/My-Portfolio",
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "^9.6.1",
+    "aws-sdk": "^2.517.0",
+    "bootstrap": "^4.3.1",
+    "html-to-react": "1.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
+    "react": "^16.9.0",
+    "react-bootstrap": "^1.0.0-beta.11",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.1",
+    "serve": "^10.1.2"
+  },
+  "scripts": {
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "sass": "^1.69.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.2.0",
+    "webpack": "^4.39.2"
+  },
+  "overrides": {
+    "htmlparser2": "6.1.0"
+  }
+}
