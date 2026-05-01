@@ -1,62 +1,71 @@
+### 🌐 Personal Portfolio Website
 
+A modern, responsive developer portfolio built to showcase my skills, projects, experience, and certifications.
+Designed with performance, clean UI, and real-world integrations in mind.
+---
 <img width="495" height="739" alt="image" src="https://github.com/user-attachments/assets/8e28cbcd-634d-49c2-b32b-03f40144d42e" />
 <img width="489" height="760" alt="image" src="https://github.com/user-attachments/assets/5711b108-9cdf-48d3-87b4-4f6323c9ab48" />
 <img width="493" height="766" alt="image" src="https://github.com/user-attachments/assets/5ebc582d-73ec-4c80-81f4-60a2fc55e17f" />
 <img width="649" height="695" alt="image" src="https://github.com/user-attachments/assets/a8573f6d-3183-4114-887e-dfaf2145d493" />
-
 ---
+### 🚀 Live Overview
 
-## 📁 Portfolio Sections
+This portfolio includes:
 
-| Section | Description |
-|---------|-------------|
-| 🏠 **Home** | About me, tech stack table, animated skill progress bars |
-| 📄 **Resume** | Work experience, education timeline, 8 certificates with modals |
-| 💼 **Work** | 8 GitHub projects with live links and tech badges |
-| ✉️ **Contact** | Contact form (AWS SES) + direct social links |
-
+Professional introduction & tech stack
+Interactive resume timeline
+Featured GitHub projects with live demos
+Contact form integrated with AWS SES
+Fully responsive design
+### 🧭 Portfolio Sections
+🏠 Home
+Professional introduction
+Technology stack table
+Animated skill progress bars
+Quick overview of expertise
+📄 Resume
+Work experience timeline
+Education history
+8 certifications with modal previews
+💼 Work (Projects)
+8 featured GitHub projects
+Live demo links
+Technology badges for each project
+Real-world backend & frontend apps
+✉️ Contact
+Direct social links (GitHub, LinkedIn, Email)
 ---
+### 📦 Run Locally
 
-## 🏆 Certifications
+Clone the repository and start the development server.
 
-- ASP.NET Core & Web API
-- C# Complete Masterclass
-- SQL Server — Complete Course
-- JavaScript — The Complete Guide
-- Bootstrap 5 — Responsive Design
-- AWS Cloud Practitioner
-- React — The Complete Guide
-- Git & GitHub — Complete Course
-
----
-
-## 📦 Run Locally
-
-```bash
-# Clone the repo
 git clone https://github.com/25abubakar/My-Portfolio.git
 cd My-Portfolio
 
-# Install dependencies
 npm install --legacy-peer-deps
-
-# Start development server (opens at http://localhost:3000)
 npm run dev
-```
 
-> **Requirements:** Node.js v16–v20
+Open in browser:
 
+http://localhost:3000
 ---
+### Requirements
 
-## 🏗️ Build for Production
+Node.js v16 – v20
+---
+### 🏗️ Production Build
 
-```bash
+To create an optimized production build:
+
 npm run build
-```
-
 ---
+### 📬 Contact
 
+If you'd like to collaborate or hire me, feel free to reach out through the contact form on the website or via social platforms.
 
-*© 2026 Muhammad Abubakar — All Rights Reserved*
+⭐ Support
 
+If you like this project, consider giving it a ⭐ on GitHub — it helps a lot!
+
+© 2026 Muhammad Abubakar — All Rights Reserved
 
